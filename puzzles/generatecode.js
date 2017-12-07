@@ -17,7 +17,7 @@ var puzzleOffset = {
     "sandwich": 677778,
     "MMXVII": 794371,
     "2015": 125990,
-    "step2": 3,
+    "step2": 258566,
     "hiding": 435309
 }
 
