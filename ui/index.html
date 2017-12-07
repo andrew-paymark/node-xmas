@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Node CTF Scoreboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            /* font-size: 20px; */
+        }
+
+        .header {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: .05rem solid #e5e5e5;
+            /* margin-bottom: 1rem; */
+        }
+
+        .header h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 3rem;
+        }
+
+        #team-leaderboard-names a {
+            display: block;
+        }
+
+        table a,
+        table a:hover {
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header clearfix">
+            <h1 class="text-muted">
+                <a href="/">Node CTF Scoreboard</a>
+            </h1>
+        </header>
+
+
+    </div>
+
+    <div class="container">
+
+        <div id="teamdd-status-x" aria-labelledby="dropdownMenuButton">
+            <table class="table table-hover table-striped table-dark">
+
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Team Name</th>
+                        <th scope="col">Solved</th>
+                    </tr>
+                </thead>
+                <tbody id="team-leaderboard-names">
+                    <tr colspan="2">
+                        <td>Loading...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="container" id="teampage">
+        <h2 id="teamname">Select team from table above</h2>
+        <table class="table table-hover table-striped table-dark" id="teamtable">
+
+            <thead>
+                <tr>
+                    <td>Puzzles Solved</td>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/locale/en-nz.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
